@@ -9,7 +9,7 @@ const url = `mongodb+srv://javisimon22:${password}@data-base.shzhzce.mongodb.net
 
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
-
+app.use("/health", (req, res) => res.sendStatus(200))
 const connectToMongo = async() =>{
   try{
 
