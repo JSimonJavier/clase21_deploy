@@ -45,4 +45,23 @@ DEPLOY de nuestra pagian -> vamos a compartir nuestro proyecto al mundo
     1) definimos en un archivo de configuracion externa
       - en algunos casos -> a traves de una interfaz de usuario o mediate una linea de comandos
       - en otros -> se define un archivo especifico -> .env -> se almancena en la rai del proyecto
+    
+    *supongamos
+      - guardar un string conexion bs -> DATABASE_URL
+      - guardar nuetro secret -> SECRET_KEY
+        *=> nuestro archivo .env deber ser
+          DATABASE_URL = mongodb://localhost:27017/
+          SECRET_KEY = mi_api_key_secreta
+      -una vez definas -> podemos acceder a las variables de entoner -> sintaxis especifica del lenguaje de programacion utilizado
+        *ejemplo node.js -> SECRET_KEY -> process.env.SECRET_KEY
+          => PROCESS:  objeto global de Node -> es responsable de facilitar la interaccion con el sistema operativo y objetener inf sore la app en ejecucion dentro del entornde de nodejs
+
+      * dotenv -> libreria para guardar nuestras variables de entorno y poder acceder después a ellas
+          1) instalar -> npm i dotenv
+          2) agregamos un archivo .env donde vamso a guardar nuestras variables
+          3) usar la libreria
+          4) ejecutamos la funcion dotenv.config() -> va a a tomar todas las variables de .env y lo va a cargar en el process
+          5) llamamos y utilizamos las variables
+          6) antes pushear a github -> gitignore -> .env
+
 */
