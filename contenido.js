@@ -64,4 +64,13 @@ DEPLOY de nuestra pagian -> vamos a compartir nuestro proyecto al mundo
           5) llamamos y utilizamos las variables
           6) antes pushear a github -> gitignore -> .env
 
+
+? README
+  - es un archivo de texto que tiene como objetivo -> proporcionar inf sobre el mismo proyecto
+  - crear un README -> impacto significativo en la forma qen que otros usuarios interactuan con nuestro proyecto
+  - incluir??
+    -> descripcion general del proyecto
+    -> instrucciones para instalarlo y utilizarlo
+    -> funciones principales
+    -> autores y agradecimientos
 */
